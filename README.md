@@ -17,3 +17,11 @@ Proyecto integrador de DS1406 Tecnología Backend (Laravel + PostgreSQL).
 8. php artisan serve
 
 Autor: KELLY IDANIA TORRE MAMANI
+## Datos de prueba
+Comando: php artisan migrate:fresh --seed
+
+| Usuario              | Rol             | Contraseña |
+|----------------------|-----------------|------------|
+| admin@posta.test     | administrador   | password   |
+| medico@posta.test    | personal_medico | password   |
+| recepcion@posta.test | recepcion       | password   |
