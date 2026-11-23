@@ -35,7 +35,7 @@ class PacienteController extends Controller
      */
     public function create()
     {
-        //
+        return view('pacientes.create', ['paciente' => new Paciente()]);
     }
 
     /**
@@ -43,7 +43,11 @@ class PacienteController extends Controller
      */
     public function store(StorePacienteRequest $request)
     {
-        //
+        Paciente::create($request->validated());
+ 
+    return redirect()->route('pacientes.index')
+        ->with('ok', 'Paciente registrado correctamente.');
+
     }
 
     /**
