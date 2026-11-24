@@ -57,5 +57,5 @@
         </tbody>
     </table>
  
-    {{ $personal->links('pagination::simple-default') }}
+    {{ $personal->links() }}
 @endsection
